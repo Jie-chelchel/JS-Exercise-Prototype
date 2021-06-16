@@ -86,7 +86,8 @@ function Car(model, milesPerGallon) {
   this.milesPerGallon = milesPerGallon;
   this.tank = 0;
   this.odometer = 0;
-};
+}
+
 Car.prototype.fill = function (gallons) {
   return this.tank += gallons;
 };
@@ -128,13 +129,13 @@ console.log(myBaby);
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. window bindingl If 'this' is not point to anything, it defaults to the window, or global object in node, or 
+  1. window binding If 'this' is not point to anything, it defaults to the window, or global object in node, or 
     undefined in strict mode.
   2. Implicit binding; When it applies to the a method in an object, whoever called that method, who is "this" refers to
   3. Explicit Binding: A function use .call, .apply or .bind to allow an object use that function, 
     then "this" refers to the object. 
-  4. new binding: first, you need to build a constuctor, then use the new keyword to make instance 
-     object of the constuctor, and 'this' points to the new object being made. 
+  4. new binding: first, you need to build a constructor, then use the new keyword to make instance 
+     object of the constructor, and 'this' points to the new object being made. 
 */
 
 
